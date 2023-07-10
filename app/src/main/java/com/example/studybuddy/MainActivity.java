@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button btn;
+Button btn,btn2;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +17,18 @@ Button btn;
         setContentView(R.layout.activity_main);
 
   btn = findViewById(R.id.btn);
+  btn2 = findViewById(R.id.btn2);
   btn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
           Intent in = new Intent(getApplicationContext(),Main_Interface.class);
+          startActivity(in);
+      }
+  });
+ btn2.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+          Intent in = new Intent(getApplicationContext(), Login_SignUp_main.class);
           startActivity(in);
       }
   });

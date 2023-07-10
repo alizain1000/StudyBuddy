@@ -11,5 +11,10 @@
     android:layout_height="wrap_content"
     android:text="click me"
     android:id="@+id/btn"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:id="@+id/btn2"/>
 
 </LinearLayout>

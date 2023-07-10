@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/bg"
+android:padding="20dp"
+tools:context=".student_login_Fragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Student"
+    android:textSize="45sp"
+    android:textAllCaps="true"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:layout_marginTop="20dp"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/baseline_person_24"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:drawablePadding="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:drawablePadding="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?Click Here"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Click to Proceed"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+
