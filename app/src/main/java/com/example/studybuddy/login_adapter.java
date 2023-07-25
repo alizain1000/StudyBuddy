@@ -19,7 +19,8 @@ public class login_adapter extends FragmentPagerAdapter {
 
             return  new student_login_Fragment();
         } else
-            return  new Teacher_login_Fragment();
+        { return  new  Teacher_login_Fragment();}
+
 
     }
 

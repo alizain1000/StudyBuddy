@@ -6,37 +6,37 @@
         android:orientation="vertical"
         android:background="@drawable/bg"
         android:padding="20dp"
-        tools:context=".Teacher_SignUp_Fragment">
+        tools:context=".Admin_Login_Fragment"
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Teacher"
-            android:textSize="30sp"
+            android:text="Admin"
             android:textAllCaps="true"
+            android:textSize="45sp"
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="0dp"/>
+            android:layout_marginTop="20dp"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:src="@drawable/baseline_person_24"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="20dp">
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingLeft="20dp"
-
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:hint="Name"
-                android:id="@+id/name"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:hint="Email"
+                android:id="@+id/email"
                 android:inputType="textWebEmailAddress"
                 android:drawablePadding="20dp"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -44,30 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingLeft="20dp"
-
-                android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/baseline_groups_24"
-                android:hint="Class"
-                android:inputType="textWebPassword"
                 android:id="@+id/password"
-                android:drawablePadding="20dp"
-                tools:ignore="TouchTargetSizeCheck" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="20dp"
-
-                android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/baseline_email_24"
-                android:hint="E-mail"
-                android:inputType="textWebPassword"
-                android:drawablePadding="20dp"
-                tools:ignore="TouchTargetSizeCheck" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="20dp"
-
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:hint="Password"
@@ -81,49 +58,18 @@
                 android:text="Forget Password?Click Here"
                 android:textAlignment="textEnd"
                 android:layout_marginTop="10dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Male"
-                    android:id="@+id/male"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female"
-                    android:id="@+id/female"/>
-            </RadioGroup>
-
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Click to Proceed"
                 android:layout_gravity="center"
-android:id="@+id/login"
+                android:id="@+id/login"
                 android:layout_marginTop="30dp"/>
 
 
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

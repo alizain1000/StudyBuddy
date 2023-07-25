@@ -36,6 +36,7 @@ tools:context=".Teacher_login_Fragment"
         android:paddingLeft="20dp"
         android:drawableLeft="@drawable/baseline_email_24"
         android:hint="Email"
+        android:id="@+id/email"
         android:inputType="textWebEmailAddress"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
@@ -43,7 +44,7 @@ tools:context=".Teacher_login_Fragment"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="20dp"
-
+        android:id="@+id/password"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:hint="Password"
@@ -63,7 +64,7 @@ tools:context=".Teacher_login_Fragment"
         android:layout_height="wrap_content"
         android:text="Click to Proceed"
         android:layout_gravity="center"
-
+        android:id="@+id/login"
         android:layout_marginTop="30dp"/>
 
 

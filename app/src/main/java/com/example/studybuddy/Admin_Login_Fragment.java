@@ -12,12 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-
-public class Teacher_login_Fragment extends Fragment {
+public class Admin_Login_Fragment extends Fragment {
     EditText email,password;
     AppCompatButton login;
 
-    public Teacher_login_Fragment() {
+
+    public Admin_Login_Fragment() {
         // Required empty public constructor
     }
 
@@ -26,14 +26,16 @@ public class Teacher_login_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       View view =  inflater.inflate(R.layout.fragment_teacher_login_, container, false);
+        View view =  inflater.inflate(R.layout.fragment_admin__login_, container, false);
+
+
         email = view.findViewById(R.id.email);
         password = view.findViewById(R.id.password);
         login = view.findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getContext(), Teacher_Dashboard.class);
+                Intent in = new Intent(getContext(), Admin_Pannel.class);
                 startActivity(in);
             }
         });
@@ -41,8 +43,16 @@ public class Teacher_login_Fragment extends Fragment {
 
 
 
+
+
+
         return view;  }
 }
+
+
+
+
+
 
 
 

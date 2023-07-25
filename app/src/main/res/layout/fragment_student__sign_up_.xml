@@ -103,7 +103,15 @@ tools:context=".Student_SignUp_Fragment">
         android:layout_height="wrap_content"
         android:text="Click to Proceed"
         android:layout_gravity="center"
+android:id="@+id/login"
+        android:layout_marginTop="30dp"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Click to Proceed"
+        android:layout_gravity="center"
+        android:id="@+id/login2"
         android:layout_marginTop="30dp"/>
 
 

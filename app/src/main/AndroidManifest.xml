@@ -12,6 +12,9 @@
         android:theme="@style/Theme.StudyBuddy"
         tools:targetApi="31">
         <activity
+            android:name=".mock_layout"
+            android:exported="false" />
+        <activity
             android:name=".Holy_Quran_Teachers"
             android:exported="false" />
         <activity
@@ -42,7 +45,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Teacher_Dashboard"
             android:exported="true" />
     </application>
 

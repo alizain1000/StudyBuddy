@@ -18,15 +18,15 @@ public class signUp_adapter extends FragmentPagerAdapter {
         if (p ==0){
 
             return  new Student_SignUp_Fragment();
-        } else
-            return  new Teacher_SignUp_Fragment();
+        } else if (p==1)
+        {return  new Teacher_SignUp_Fragment();}else return new Admin_Login_Fragment();
 
     }
 
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Nullable
@@ -36,9 +36,9 @@ public class signUp_adapter extends FragmentPagerAdapter {
 
 
             return "Student";
-        } else {
+        } else if (p==1){
             return "Teacher";
-        }
+        }else return "Admin";
 
 
     }
