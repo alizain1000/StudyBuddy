@@ -57,6 +57,7 @@ tools:context=".Teacher_login_Fragment"
         android:layout_height="wrap_content"
         android:text="Forget Password?Click Here"
         android:textAlignment="textEnd"
+        android:id="@+id/forget"
         android:layout_marginTop="10dp"/>
 
     <androidx.appcompat.widget.AppCompatButton

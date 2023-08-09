@@ -48,7 +48,7 @@ tools:context=".Student_SignUp_Fragment">
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/baseline_groups_24"
         android:hint="Class"
-        android:inputType="textWebPassword"
+        android:inputType="text"
         android:id="@+id/password"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
@@ -60,7 +60,7 @@ tools:context=".Student_SignUp_Fragment">
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/baseline_email_24"
         android:hint="E-mail"
-        android:inputType="textWebPassword"
+        android:inputType="textEmailAddress"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
     <EditText
@@ -71,16 +71,17 @@ tools:context=".Student_SignUp_Fragment">
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:hint="Password"
-        android:inputType="textWebPassword"
+        android:inputType="textEmailAddress"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Forget Password?Click Here"
-        android:textAlignment="textEnd"
-        android:layout_marginTop="10dp"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Forget Password?Click Here"-->
+<!--        android:id="@+id/forget"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:layout_marginTop="10dp"/>-->
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

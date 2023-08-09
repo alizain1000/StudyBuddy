@@ -48,26 +48,26 @@
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/baseline_groups_24"
                 android:hint="Class"
-                android:inputType="textWebPassword"
-                android:id="@+id/password"
+                android:inputType="text"
+                android:id="@+id/clas"
                 android:drawablePadding="20dp"
                 tools:ignore="TouchTargetSizeCheck" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingLeft="20dp"
-
+                        android:id="@+id/email"
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:hint="E-mail"
-                android:inputType="textWebPassword"
+                android:inputType="textEmailAddress"
                 android:drawablePadding="20dp"
                 tools:ignore="TouchTargetSizeCheck" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingLeft="20dp"
-
+                android:id="@+id/password"
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:hint="Password"
@@ -75,12 +75,12 @@
                 android:drawablePadding="20dp"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Forget Password?Click Here"
-                android:textAlignment="textEnd"
-                android:layout_marginTop="10dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Forget Password?Click Here"-->
+<!--                android:textAlignment="textEnd"-->
+<!--                android:layout_marginTop="10dp"/>-->
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

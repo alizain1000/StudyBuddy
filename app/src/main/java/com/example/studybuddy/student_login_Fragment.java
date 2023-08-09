@@ -11,11 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class student_login_Fragment extends Fragment {
 EditText email,password;
 AppCompatButton login;
+TextView forget;
     public student_login_Fragment() {
         // Required empty public constructor
     }
@@ -29,6 +31,17 @@ AppCompatButton login;
   email = view.findViewById(R.id.email);
   password = view.findViewById(R.id.password);
   login = view.findViewById(R.id.login);
+
+        forget = view.findViewById(R.id.forget);
+
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getContext(), Forget_Password.class);
+                startActivity(in);
+
+            }
+        });
   login.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
