@@ -14,7 +14,11 @@
         android:theme="@style/Theme.StudyBuddy"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Forget_Password"
+=======
+            android:name=".videocalling"
+>>>>>>> 8757d1329023a4cf2208eb2bd1465eff6735f98b
             android:exported="false" />
         <activity
             android:name=".mock_layout"

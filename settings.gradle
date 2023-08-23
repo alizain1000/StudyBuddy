@@ -10,12 +10,20 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven {
             url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
         }
         maven {
             url "https://maven.google.com"
         }
+=======
+
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
+        maven { url 'https://www.jitpack.io' }
+>>>>>>> 8757d1329023a4cf2208eb2bd1465eff6735f98b
     }
 }
 rootProject.name = "StudyBuddy"
