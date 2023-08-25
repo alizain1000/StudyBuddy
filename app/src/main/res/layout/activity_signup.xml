@@ -6,14 +6,13 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@drawable/bg"
 android:padding="20dp"
-tools:context=".Teacher_login_Fragment"
-    >
+tools:context=".Login">
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Teacher"
-    android:textAllCaps="true"
+    android:text="Sign up"
     android:textSize="45sp"
+    android:textAllCaps="true"
     android:gravity="center"
     android:textStyle="bold"
     android:textColor="@color/black"
@@ -34,9 +33,36 @@ tools:context=".Teacher_login_Fragment"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="20dp"
+        android:id="@+id/name"
+        android:background="@drawable/box_shap"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:hint="Name"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/Number"
+        android:drawableLeft="@drawable/baseline_phone_iphone_24"
+        android:hint="Number"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_shap"
+        android:inputType="number"
+        android:drawablePadding="20dp"
+        android:maxLength="11"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/email"
         android:drawableLeft="@drawable/baseline_email_24"
         android:hint="Email"
-        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_shap"
         android:inputType="textWebEmailAddress"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
@@ -44,20 +70,17 @@ tools:context=".Teacher_login_Fragment"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="20dp"
+
         android:id="@+id/password"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:hint="Password"
         android:inputType="textWebPassword"
         android:drawablePadding="20dp"
+        android:maxLength="8"
+        android:background="@drawable/box_shap"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Forget Password?Click Here"
-        android:textAlignment="textEnd"
-        android:layout_marginTop="10dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="150dp"
@@ -68,18 +91,10 @@ tools:context=".Teacher_login_Fragment"
         android:layout_marginTop="30dp"/>
 
 
+
+
 </LinearLayout>
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 
 
 
