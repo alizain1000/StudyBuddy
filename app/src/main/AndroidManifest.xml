@@ -12,6 +12,12 @@
         android:theme="@style/Theme.StudyBuddy"
         tools:targetApi="31">
         <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
             android:name=".videocalling"
             android:exported="false" />
         <activity
@@ -19,28 +25,20 @@
             android:exported="false" />
         <activity
             android:name=".Holy_Quran_Teachers"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Mytheme" />
         <activity
             android:name=".Admin_Pannel"
-            android:exported="false" />
-        <activity
-            android:name=".SignUp_stdnt_tchr"
-            android:exported="false" />
-        <activity
-            android:name=".SignUp_Main"
-            android:exported="false" />
-        <activity
-            android:name=".Login_stdnt_tchr"
-            android:exported="false" />
-        <activity
-            android:name=".Login_SignUp_main"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Mytheme" />
         <activity
             android:name=".Main_Interface"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Mytheme" />
         <activity
             android:name=".splash_screen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Mytheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,7 +47,8 @@
         </activity>
         <activity
             android:name=".Teacher_Dashboard"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Mytheme" />
     </application>
 
 </manifest>

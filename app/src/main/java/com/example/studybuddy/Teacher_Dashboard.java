@@ -14,7 +14,7 @@ CardView videocalling;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.teachers_dashboard);
 
         videocalling  = findViewById(R.id.videocalling);
 videocalling.setOnClickListener(new View.OnClickListener() {

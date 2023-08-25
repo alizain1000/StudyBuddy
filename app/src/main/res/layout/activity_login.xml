@@ -6,11 +6,11 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@drawable/bg"
 android:padding="20dp"
-tools:context=".student_login_Fragment">
+tools:context=".Login">
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Student"
+    android:text="Sign In"
     android:textSize="45sp"
     android:textAllCaps="true"
     android:gravity="center"
@@ -34,6 +34,7 @@ tools:context=".student_login_Fragment">
         android:layout_height="40dp"
         android:paddingLeft="20dp"
         android:id="@+id/email"
+        android:background="@drawable/box_shap"
         android:drawableLeft="@drawable/baseline_email_24"
         android:hint="Email"
         android:inputType="textWebEmailAddress"
@@ -43,10 +44,12 @@ tools:context=".student_login_Fragment">
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="20dp"
+        android:background="@drawable/box_shap"
         android:id="@+id/password"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:hint="Password"
+        android:maxLength="8"
         android:inputType="textWebPassword"
         android:drawablePadding="20dp"
         tools:ignore="TouchTargetSizeCheck" />
@@ -67,6 +70,15 @@ tools:context=".student_login_Fragment">
         android:layout_marginTop="30dp"/>
 
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not yet registered ? Sign Up"
+        android:id="@+id/signup"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        />
 </LinearLayout>
 </LinearLayout>
 
