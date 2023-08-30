@@ -19,8 +19,8 @@
                 android:layout_marginStart="1dp">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
                     android:id="@+id/img"
                     android:background="#8B2AE80B"
                     android:src="@mipmap/ic_launcher"/>
@@ -35,7 +35,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contact Name"
+                        android:text="Ali Zain"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         android:id="@+id/name"/>
@@ -44,7 +44,26 @@
                         android:id="@+id/number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contaact Number"
+                        android:text="0301-23456789"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 Years Teaching Experience"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/fees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BISE Punjab"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/grades"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Class :   11th - 12th"
                         android:textSize="18sp"/>
 
 

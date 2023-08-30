@@ -24,53 +24,56 @@ FrameLayout frame;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_interface);
-        btm_nav = findViewById(R.id.btm_nav);
-        frame = findViewById(R.id.frame);
-        load(new Home_Fragment(),2);
-       btm_nav.setOnItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-           @Override
-           public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-               int id= item.getItemId();
-               if (id == R.id.home){
-                   load(new Home_Fragment(),2);
+       btm_nav = findViewById(R.id.bnav);
+        load(new Home_Fragment(),0);
+        btm_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
 
-               }
+                if (id == R.id.home){
+                    load(new Home_Fragment(),0);
 
+                }if (id == R.id.find){
+                    load(new Search_Fragment(),1);
 
-               else if (id == R.id.find) {
-                   load(new Search_Fragment(),3);
-               }
+                }if (id == R.id.profile){
+                    load(new Profile_Fragment(),2);
 
-               else {
-                   load(new Profile_Fragment(),4);
-               }
+                }
 
 
-               return true;
-           }
-       });
+                return true;
+
+            }
+        });
 
 
     }
+    public void load (Fragment fragment, int flag){
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        if (flag==0){
+            ft.add(R.id.framelayout,fragment);
+            fm.popBackStack(ROOT_FRAGMENT_TAG,FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            ft.addToBackStack(ROOT_FRAGMENT_TAG);}
+        else {
+            ft.replace(R.id.framelayout, fragment);
+            ft.addToBackStack(null);}
+
+        ft.commit();
 
 
 
 
-        public void load(Fragment fragment, int flag) {
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
 
-            if (flag == 0) {
-                ft.replace(R.id.frame, fragment);  // Replace instead of add
-                ft.addToBackStack(null);
-            } else {
-                ft.replace(R.id.frame, fragment);
-                ft.addToBackStack(null);
-                ft.commit();
-            }
+
+
+
+    }
         }
 
 
 
 
-    }
+
