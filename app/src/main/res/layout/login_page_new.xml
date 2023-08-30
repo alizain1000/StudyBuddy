@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/backround"
+    android:orientation="vertical"
+    tools:context=".Login_Page">
+
+
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Enter E-mail"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+
+        android:hint="Enter Password"
+        android:inputType="numberPassword"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0AE113"
+        android:text="Login"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F44336"
+        android:text="Not yet registered ? Signup here"
+        tools:ignore="TextSizeCheck" />
+
+</LinearLayout>
